@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView
+		android:id="@+id/ivJob"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:contentDescription="@string/list_job"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintVertical_bias="0.0"
+		tools:srcCompat="@tools:sample/avatars" />
+
+	<TextView
+		android:id="@+id/tvJob"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:textSize="18sp"
+		app:layout_constraintStart_toEndOf="@id/ivJob"
+		app:layout_constraintTop_toTopOf="@id/ivJob"
+		app:layout_constraintEnd_toEndOf="parent"
+		tools:text="Job Position" />
+
+	<TextView
+		android:id="@+id/tvCompany"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:textSize="12sp"
+		app:layout_constraintStart_toStartOf="@+id/tvJob"
+		app:layout_constraintTop_toBottomOf="@+id/tvJob"
+		app:layout_constraintEnd_toEndOf="parent"
+		tools:text="Company Name" />
+
+	<TextView
+		android:id="@+id/tvHour"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:textSize="12sp"
+		app:layout_constraintStart_toStartOf="@+id/tvCompany"
+		app:layout_constraintTop_toBottomOf="@+id/tvCompany"
+		app:layout_constraintEnd_toEndOf="parent"
+		tools:text="Work Hour" />
+
+	<TextView
+		android:id="@+id/tvRegion"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:textSize="12sp"
+		app:layout_constraintStart_toStartOf="@+id/tvHour"
+		app:layout_constraintTop_toBottomOf="@+id/tvHour"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		tools:text="Work Region" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
