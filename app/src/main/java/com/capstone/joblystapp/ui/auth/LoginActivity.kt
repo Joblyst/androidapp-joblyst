@@ -30,7 +30,15 @@ class LoginActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+        setupNavigation()
         playAnimation()
+    }
+
+    private fun setupNavigation() {
+        binding.registHereTextView.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupView() {

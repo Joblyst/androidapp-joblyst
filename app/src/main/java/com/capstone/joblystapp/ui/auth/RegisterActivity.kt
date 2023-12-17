@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
@@ -28,7 +29,15 @@ class RegisterActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+        setupNavigation()
         playAnimation()
+    }
+
+    private fun setupNavigation() {
+        binding.loginHereTextView.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupView() {
@@ -52,6 +61,7 @@ class RegisterActivity : AppCompatActivity() {
 
             showLoading(true)
             viewModel.registerSession(username, email, password).observe(this){
+                Log.d("RegisterActivity", "Response: $it")
                 if (it.message == "201") {
                     showLoading(false)
                     showRegisterSuccessDialog()

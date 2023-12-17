@@ -142,6 +142,33 @@
 		app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
 		tools:alpha="100" />
 
+	<TextView
+		android:id="@+id/dontHaveAccTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="70dp"
+		android:alpha="1"
+		android:text="@string/dont_have_acc"
+		android:textColor="@color/black"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/googleLogo"
+		tools:alpha="100" />
+
+	<TextView
+		android:id="@+id/registHereTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="95dp"
+		android:alpha="1"
+		android:text="@string/regist_here"
+		android:textColor="@color/blue"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/dontHaveAccTextView"
+		app:layout_constraintTop_toBottomOf="@+id/googleLogo"
+		tools:alpha="100" />
+
 	<ImageView
 		android:id="@+id/googleLogo"
 		android:layout_width="wrap_content"
