@@ -36,7 +36,7 @@ class ProfileViewModel(private val userRepository: UserRepository): ViewModel() 
     }
 
     fun getDataUser(token: String) {
-        val client = ApiConfig.getApiService().getUserByUsername(token)
+        val client = ApiConfig.getApiService("https://joblyst-api-cpe5hpucwa-uc.a.run.app").getUserByUsername(token)
         client.enqueue(object : Callback<ProfileResponse> {
             override fun onResponse(
                 call: Call<ProfileResponse>,

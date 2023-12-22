@@ -22,4 +22,5 @@ class HomeViewModel (
 
     val getListArticle: LiveData<PagingData<JobsItem>> =
         userRepository.getJobs().cachedIn(viewModelScope)
+
 }
