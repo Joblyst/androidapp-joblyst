@@ -1,9 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ProfileAbout">
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingStart="20dp"
+	android:paddingEnd="20dp"
+	tools:context=".ProfileAbout">
+
+	<TextView
+		android:id="@+id/aboutTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/about_page"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		android:textColor="@color/black"
+		android:layout_marginTop="30dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutDescription"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/description_about"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutTitle"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeature"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/key_features"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		android:textColor="@color/black"
+		android:layout_marginTop="16dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutDescription"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureHome"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/home"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeature"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureDetail"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/detail_job"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeatureHome"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureSearch"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/job_search"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeatureDetail"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureProfile"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/profile"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeatureSearch"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureThemeDark"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/theme_dark"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeatureProfile"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/aboutFeatureChangeLanguage"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/change_language"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@+id/aboutFeatureThemeDark"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

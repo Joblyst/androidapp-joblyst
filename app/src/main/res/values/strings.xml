@@ -29,4 +29,19 @@
     <string name="change_settings">Ubah Pengaturan</string>
     <string name="logout">Keluar</string>
     <string name="list_job">List Pekerjaan</string>
+	<string name="select_a_job">Select a Job</string>
+	<string name="profile_page">Profile</string>
+    <string name="search_page">Search</string>
+    <string name="about_page">About</string>
+    <string name="description_about">Joblyst is a job search application that helps you find the right job for your skills and interests.</string>
+    <string name="key_features">Key Features:</string>
+    <string name="job_search">- Job Search</string>
+    <string name="home">- Home</string>
+    <string name="detail_job">- Detail Job</string>
+    <string name="profile">- Profile</string>
+    <string name="theme_dark">- Theme Dark</string>
+    <string name="change_language">- Change Language</string>
+    <string name="home_page">Home</string>
+    <string name="theme_page">Theme</string>
+    <string name="detail_qualifications">- Blalaaaaaaaaaaaaaa</string>
 </resources>    
