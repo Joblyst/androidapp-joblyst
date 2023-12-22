@@ -1,11 +1,15 @@
 package com.example.job.retrofit
 
+import com.example.job.model.JobByPositionResponse
+import com.example.job.model.PredictionRequest
+import com.example.job.model.PredictionResponse
 import com.example.job.response.GetJobsResponse
 import com.example.job.response.LoginResponse
 import com.example.job.response.ProfileResponse
 import com.example.job.response.RegisterResponse
 import retrofit2.Call
 import retrofit2.Response
+import retrofit2.http.Body
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -42,9 +46,21 @@ interface ApiService {
         @Query("q") query: String
     ): Call<GetJobsResponse>
 
+    @POST("predict")
+    fun predictText(
+        @Body request: PredictionRequest
+    ): Call<PredictionResponse>
+
     @GET("/user")
     fun getUserByUsername(
         @Header("Authorization") token : String,
     ): Call<ProfileResponse>
+
+
+    @GET("job")
+    fun getJobByPosition(
+        @Header("Authorization") token: String,
+        @Query("jobPosition") jobPosition: String
+    ): Call<JobByPositionResponse>
 
 }
