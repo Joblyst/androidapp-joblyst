@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
+import com.example.job.MainActivity
 import com.example.job.ProfileAbout
 import com.example.job.ProfileTheme
 import com.example.job.R
@@ -52,7 +53,6 @@ class ProfileFragment : Fragment() {
             }
             setupDataUser()
         }
-
         binding.logoutButton.setOnClickListener {
             profileViewModel.logout()
         }
@@ -92,8 +92,8 @@ class ProfileFragment : Fragment() {
         Glide.with(this)
             .load(data.photoProfile)
             .circleCrop()
-            .placeholder(R.drawable.profile_placeholder)
-            .error(R.drawable.profile_placeholder)
+            .placeholder(R.drawable.logo_profile)
+            .error(R.drawable.logo_profile)
             .into(binding.imgProfile)
 
         binding.nameUser.text = data.username
