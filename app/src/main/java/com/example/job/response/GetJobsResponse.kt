@@ -53,7 +53,7 @@ data class JobsItem(
 	val jobPosition: String,
 
 	@field:SerializedName("qualifications")
-	val qualifications: List<String>,
+	val qualifications: List<String>?,
 
 	@field:SerializedName("jobLevelSpecific")
 	val jobLevelSpecific: String
