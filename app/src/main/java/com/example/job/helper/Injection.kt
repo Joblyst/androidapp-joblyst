@@ -11,7 +11,8 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("t
 object Injection {
     fun provideRepository(context: Context): UserRepository {
         val preferences = UserPreferences.getInstance(context.dataStore)
-        val apiService = ApiConfig.getApiService()
-        return UserRepository.getInstance(apiService, preferences)
+        val apiService1 = ApiConfig.getApiService("https://joblyst-api-cpe5hpucwa-uc.a.run.app")
+        val apiService2 = ApiConfig.getApiService("https://another-api-url.com")
+        return UserRepository.getInstance(apiService1, apiService2, preferences)
     }
 }
